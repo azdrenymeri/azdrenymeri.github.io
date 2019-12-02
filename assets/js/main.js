@@ -161,7 +161,9 @@
 			let emailNode = $('#email_field');
 			let subjectNode = $('#subject_field');
 			let messageNode = $('#message_field');
-			let msg = subjectNode.val() + '\n' + messageNode.val()
+			let msg = subjectNode.val();
+			msg += '\n';
+			msg += messageNode.val();
 
 			 if(nameNode.val().length <= 0 || emailNode.val().length <= 0 || 
 			 	subjectNode.val().length <= 0 || messageNode.val().length <= 0){
