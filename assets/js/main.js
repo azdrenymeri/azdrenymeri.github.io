@@ -153,7 +153,7 @@
 		});
 
 		// Contact Form
-		$('#contactForm').submit(function(e){
+		$('#sendMsgBtn').click(function(e){
 			e.preventDefault();
 
 			let nameNode = $('#name_field');
