@@ -152,6 +152,47 @@
 			}
 		});
 
-		// ContactForm
-		
+		// Contact Form
+		$('#contactForm').submit(function(e){
+			e.preventDefault();
+
+			let nameNode = $('#name_field');
+			let emailNode = $('#email_field');
+			let subjectNode = $('#subject_field');
+			let messageNode = $('#message_field');
+			let msg = subjectNode.val() + '\n' + messageNode.val()
+
+			 if(nameNode.val().length <= 0 || emailNode.val().length <= 0 || 
+			 	subjectNode.val().length <= 0 || messageNode.val().length <= 0){
+					 alert('please fill the form correctly');
+					 return;
+				 }
+			const params = {
+				user_name: $('#name_field').val(),
+				user_email: $('#email_field').val(),
+				message: msg
+			};
+			
+			emailjs.send('gmail', 'contact', params, 'user_use8oPrBA0jXLxFJQ0feh')
+			.then(function(res){
+				
+				//success 
+				nameNode.val('');
+				emailNode.val('');
+				subjectNode.val('');
+				messageNode.val('');
+				$('#contactSection').hide().after(function(){
+					$('#message-success').show();
+				})
+
+			}, function(error){
+				
+				//fail
+				alert('There was an error.');
+				return;
+			});
+
+			
+		});	
+
 })(jQuery);
