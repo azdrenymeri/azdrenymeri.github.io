@@ -13,8 +13,20 @@
 </head>
 
 <body class="is-preload">
+		
+	<div id="myModal" class="modal">
 
-	<!-- Header -->
+				<!-- The Close Button -->
+				<span class="close">&times;</span>
+			  
+				<!-- Modal Content (The Image) -->
+				<img class="modal-content" id="img01">
+			  
+				<!-- Modal Caption (Image Text) -->
+				<div id="caption"></div>
+	</div>
+	
+		<!-- Header -->
 	<section id="header">
 		<header>
 			<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
@@ -24,8 +36,8 @@
 		<nav id="nav">
 			<ul>
 				<li><a href="#one" class="active">About</a></li>
-				<li><a href="#two">Things I Can Do</a></li>
-				<li><a href="#three">A Few Projects</a></li>
+				<li><a href="#two">A Few Projects</a></li>
+				<li><a href="#three">Things I Can Do</a></li>
 				<li><a href="#four">Contact Me</a></li>
 			</ul>
 		</nav>
@@ -57,139 +69,176 @@
 			<section id="one">
 				<div class="image main" data-position="bottom">
 					<img src="images/skies.jpg" alt="" />
-					<h2 class="header-title">Hello</h2>
 				</div>
 				<div class="container">
 					<header class="major">
-
-						<p> This is Just an incredibly simple responsive site</p>
+						<p>
+							Hi! My name is Azdren Ymeri and I am a passionate full-stack developer who is eager to learn
+							and
+							develop new skills.
+							<br />
+							Looking for a new software dev to join your team? Check out my projects (and live demos!)
+							below.
+							<br />
+							I'm currently looking for my next development position and would love to talk!"
+						</p>
 					</header>
-					<p>Hi! My name is Azdren Ymeri and I am a passionate full-stack developer who is eager to learn and
-						develop new skills</p>
 				</div>
 			</section>
 
 			<!-- Two -->
 			<section id="two">
 				<div class="container">
-					<h3>Things I Can Do</h3>
+					<h3>A Few Projects</h3>
 					<br />
-					<h4>Languages</h4>
-					<ul class="feature-icons">
-						<li class="devicon-ruby-plain"><span class="font">Ruby</span></li>
-						<li class="devicon-csharp-plain"><span class="font">C#</span></li>
-						<li class="devicon-java-plain"><span class="font">Java</span></li>
-						<li class="devicon-javascript-plain"><span class="font">JavaScript</span></li>
-						<li class="devicon-html5-plain"><span class="font">HTML5</span></li>
-						<li class="devicon-css3-plain"><span class="font">CSS3</span></li>
+					<!-- First Project -->
 
-					</ul>
+					<div class="project-container">
+						<img class="project-img" src="images/funlook.JPG" alt="" />
 
-					<h4>Frameworks/Libraries</h4>
-					<ul class="feature-icons">
-						<li class="devicon-rails-plain"><span class="font">Ruby On Rails</span></li>
-						<li class="devicon-react-original"><span class="font">React</span></li>
-						<li class="devicon-react-original"><span class="font">Redux</span></li>
-						<li class="devicon-jquery-plain"><span class="font">jQuery</span></li>
-						<li class="devicon-bootstrap-plain"><span class="font">Bootstrap</span></li>
-					</ul>
+						<div class="project-content">
+							<span class="project-title">FunLook</span><br />
+							FunLook is a simple Facebook clone with basic functionality.
+							<br />
+							<a target="_blank" href="https://funlook.herokuapp.com/">Live</a>
+							&nbsp;&nbsp;
+							<a target="_blank" href="https://github.com/azdrenymeri/social-network">
+								Source
+							</a>
 
-					<h4>Testing</h4>
-					<ul class="feature-icons">
-						<li class="devicon-jasmine-plain"><span class="font">Jasmine</span></li>
-						<li class="devicon-react-original"><span class="font">Jest</span></li>
-						<li class="devicon-react-original"><span class="font">Rspec</span></li>
-						<li class="devicon-jquery-plain"><span class="font">Minitest</span></li>
-					</ul>
+						</div>
 
-					<h4>Databases</h4>
-					<ul class="feature-icons">
-						<li class="devicon-postgresql-plain"><span class="font">PostgreSQL</span></li>
-						<li class="devicon-mongodb-plain"><span class="font">Mongo</span> DB</li>
-						<li class="devicon-mysql-plain"><span class="font">MYSQL</span></li>
-					</ul>
-					<h4>Other</h4>
-					<ul class="feature-icons">
-						<li class="devicon-git-plain"><span class="font">Git</span></li>
-						<li class="devicon-nodejs-plain"><span class="font">Node.js</span></li>
-						<li class="devicon-heroku-original"><span class="font">Heroku</span></li>
-						<li class="devicon-webpack-plain"><span class="font">Webpack</span></li>
-					</ul>
+					</div>
+
+					<div class="project-container">
+						<img class="project-img" src="images/restaurant-page.JPG" alt="" />
+
+						<div class="project-content">
+							<span class="project-title">Restaurant Landing Page</span><br />
+							Restaurant landing page built with javascript.
+							<br />
+							<a target="_blank" href="https://azdrenymeri.github.io/restaurat-page/#Welcome">Live</a>
+							&nbsp;&nbsp;
+							<a target="_blank" href="https://github.com/azdrenymeri/restaurat-page">Source</a>
+
+						</div>
+
+					</div>
+
+					<div class="project-container">
+						<img class="project-img" src="images/read-it.JPG" alt="" />
+
+						<div class="project-content">
+							<span class="project-title">Read It</span><br />
+							A Reddit clone with basic features.
+							<br />
+							<a target="_blank" href="https://justreadit.herokuapp.com/">Live</a>
+							&nbsp;&nbsp;
+							<a target="_blank" href="https://github.com/azdrenymeri/reddit-clone">Source</a>
+
+						</div>
+
+					</div>
+
+
+					<div class="project-container">
+						<img class="project-img" src="images/css-lightweight-grid.JPG" alt="" />
+
+						<div class="project-content">
+							<span class="project-title">CSS Lightweight Grid</span><br />
+							A micro CSS Grid library to layout your website fast and easy.
+							<br />
+							<a target="_blank" href="https://azdreny.co/css-lightweight-grid/">Live</a>
+							&nbsp;&nbsp;
+							<a target="_blank" href="https://github.com/azdrenymeri/css-lightweight-grid">Source</a>
+
+						</div>
+
+					</div>
+					<div class="project-container">
+						<img class="project-img" src="images/etch-a-sketch.JPG" alt="" />
+
+						<div class="project-content">
+							<span class="project-title">Etch A Sketch</span><br />
+							The classic drawing toy implemented with javascript
+							<br />
+							<a target="_blank"
+						href="https://azdrenymeri.github.io/etch-a-sketch/">Live</a>
+							&nbsp;&nbsp;
+							<a target="_blank"
+						href="https://github.com/azdrenymeri/etch-a-sketch">Source</a>
+						</div>
+
+					</div>
+
+					<div class="project-container">
+							<img class="project-img" src="images/bookstore.JPG" alt="" />
+	
+							<div class="project-content">
+								<span class="project-title">Bookstore Concept</span><br />
+								A concept design for an online bookstore
+								<br />
+								<a target="_blank"
+						href="https://azdrenymeri.github.io/bookstore-concept/index.html">Live</a>
+								&nbsp;&nbsp;
+								<a target="_blank"
+						href="https://github.com/azdrenymeri/bookstore-concept">Source</a>
+							</div>
+	
+						</div>
+
+						<p>For more projects visit my <a class="underscore" target="_blank"
+							href="https://github.com/azdrenymeri">GitHub</a> profile.</p>
 				</div>
 			</section>
 
 			<section id="three">
 				<div class="container">
 					<section>
-						<h3>A Few Projects</h3>
-						<p>For more projects visit my <a class="underscore" target="_blank"
-								href="https://github.com/azdrenymeri">GitHub</a> profile.</p>
-						<div class="table-wrapper">
-							<table>
-								<thead>
-									<tr>
-										<th>Name</th>
-										<th>Description</th>
-										<th>Source</th>
-										<th>Live</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>FunLook</td>
-										<td>FunLook is a simple Facebook clone with basic functionality</td>
-										<td><a target="_blank"
-												href="https://github.com/azdrenymeri/social-network">Source</a></td>
-										<td><a target="_blank" href="https://funlook.herokuapp.com/">Live</a></td>
-									</tr>
-									<tr>
-										<td>Restaurant Landing Page</td>
-										<td>Restaurant landing page build with javascript</td>
-										<td><a target="_blank"
-												href="https://github.com/azdrenymeri/restaurat-page">Source</a></td>
-										<td><a target="_blank"
-												href="https://azdrenymeri.github.io/restaurat-page/#Welcome">Live</a>
-										</td>
-									</tr>
-									<tr>
-										<td>Read It</td>
-										<td>A Reddit clone with basic features</td>
-										<td><a target="_blank"
-												href="https://github.com/azdrenymeri/reddit-clone">Source</a></td>
-										<td><a target="_blank" href="https://justreadit.herokuapp.com/">Live</a></td>
-									</tr>
-									<tr>
-										<td>CSS Lightweight Grid</td>
-										<td>A micro CSS Grid library to layout your website fast and easy without much
-											effort</td>
-										<td><a target="_blank"
-												href="https://github.com/azdrenymeri/css-lightweight-grid">Source</a>
-										</td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>Etch A Sketch</td>
-										<td>A drawing board where you can draw with your mouse on top of the grid, set
-											different grid sizes,and use different colors</td>
-										<td><a target="_blank"
-												href="https://github.com/azdrenymeri/etch-a-sketch">Source</a></td>
-										<td><a target="_blank"
-												href="https://azdrenymeri.github.io/etch-a-sketch/">Live</a></td>
-									</tr>
-									<tr>
-										<td>Bookstore Concept</td>
-										<td>Simple concept of a Library that sells books</td>
-										<td><a target="_blank"
-												href="https://github.com/azdrenymeri/bookstore-concept">Source</a></td>
-										<td><a target="_blank"
-												href="https://azdrenymeri.github.io/bookstore-concept/index.html">Live</a>
-										</td>
-									</tr>
-								</tbody>
-								<tfoot>
-								</tfoot>
-							</table>
-						</div>
+
+						<h3>Things I Can Do</h3>
+						<br />
+						<h4>Languages</h4>
+						<ul class="feature-icons">
+							<li class="devicon-ruby-plain"><span class="font">Ruby</span></li>
+							<li class="devicon-csharp-plain"><span class="font">C#</span></li>
+							<li class="devicon-java-plain"><span class="font">Java</span></li>
+							<li class="devicon-javascript-plain"><span class="font">JavaScript</span></li>
+							<li class="devicon-html5-plain"><span class="font">HTML5</span></li>
+							<li class="devicon-css3-plain"><span class="font">CSS3</span></li>
+
+						</ul>
+
+						<h4>Frameworks/Libraries</h4>
+						<ul class="feature-icons">
+							<li class="devicon-rails-plain"><span class="font">Ruby On Rails</span></li>
+							<li class="devicon-react-original"><span class="font">React</span></li>
+							<li class="devicon-react-original"><span class="font">Redux</span></li>
+							<li class="devicon-jquery-plain"><span class="font">jQuery</span></li>
+							<li class="devicon-bootstrap-plain"><span class="font">Bootstrap</span></li>
+						</ul>
+
+						<h4>Testing</h4>
+						<ul class="feature-icons">
+							<li class="devicon-jasmine-plain"><span class="font">Jasmine</span></li>
+							<li class="devicon-react-original"><span class="font">Jest</span></li>
+							<li class="devicon-react-original"><span class="font">Rspec</span></li>
+							<li class="devicon-jquery-plain"><span class="font">Minitest</span></li>
+						</ul>
+
+						<h4>Databases</h4>
+						<ul class="feature-icons">
+							<li class="devicon-postgresql-plain"><span class="font">PostgreSQL</span></li>
+							<li class="devicon-mongodb-plain"><span class="font">Mongo</span> DB</li>
+							<li class="devicon-mysql-plain"><span class="font">MYSQL</span></li>
+						</ul>
+						<h4>Other</h4>
+						<ul class="feature-icons">
+							<li class="devicon-git-plain"><span class="font">Git</span></li>
+							<li class="devicon-nodejs-plain"><span class="font">Node.js</span></li>
+							<li class="devicon-heroku-original"><span class="font">Heroku</span></li>
+							<li class="devicon-webpack-plain"><span class="font">Webpack</span></li>
+						</ul>
 					</section>
 				</div>
 			</section>
@@ -208,7 +257,8 @@
 									placeholder="Name" /></div>
 							<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email_field"
 									placeholder="Email" /></div>
-							<div class="col-12"><input type="text" name="subject" id="subject_field" placeholder="Subject" />
+							<div class="col-12"><input type="text" name="subject" id="subject_field"
+									placeholder="Subject" />
 							</div>
 							<div class="col-12"><textarea name="message" id="message_field" placeholder="Message"
 									rows="6"></textarea></div>
@@ -216,11 +266,11 @@
 						</div>
 					</form>
 					<div class="col-12">
-							<ul class="actions">
-								<li><a  id="sendMsgBtn" class="button primary">Send Message </a> </li>
-								<li><a  id="resetFromBtn" class=" button primary" > Reset Form</a>   </li>
-							</ul>
-						</div>
+						<ul class="actions">
+							<li><a id="sendMsgBtn" class="button primary">Send Message </a> </li>
+							<li><a id="resetFromBtn" class=" button primary"> Reset Form</a> </li>
+						</ul>
+					</div>
 				</div>
 			</section>
 
@@ -248,7 +298,7 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-		
+
 		<script type="text/javascript">
 			(function () {
 				emailjs.init("user_use8oPrBA0jXLxFJQ0feh");

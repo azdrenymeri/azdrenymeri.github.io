@@ -153,6 +153,28 @@
 		});
 
 
+		// Modal
+		$('.project-img').click(function(){
+			
+			let src = $(this).attr('src');
+			$('#img01').attr('src',src);
+			$('#myModal').css('display','block');
+			
+		});
+
+		$('.close').click(function(){
+			$('#myModal').css('display','none');
+		});
+
+		// listening for esc key
+		$(document).on('keydown', function(event) {
+			if (event.key == "Escape") {
+				if($('#myModal').css('display') == 'block') {
+					$('#myModal').css('display','none');
+				}
+			}
+		});
+
 		// Contact Form
 		$('#sendMsgBtn').click(function(e){
 			e.preventDefault();
@@ -205,5 +227,6 @@
 			$('#email_field').val('');
 			$('#subject_field').val('');
 			$('#message_field').val('');
-		})
+		});
+
 })(jQuery);
