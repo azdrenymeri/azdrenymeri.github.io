@@ -185,6 +185,7 @@
 		// Contact Form
 		$('#sendMsgBtn').click(function(e){
 			e.preventDefault();
+
 			$(this).html('Sending...');
 			
 			let nameNode = $('#name_field');
@@ -221,8 +222,12 @@
 			}, function(error){
 				
 				//fail
-				alert('There was an error.');
-				return;
+				$('#contactSection').hide().after(function(){
+					$('#message-success').html("There was an error");
+					$('#message-success').css('color','red');
+					$('#message-success').show();
+				})
+				
 			});
 
 			
