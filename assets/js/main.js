@@ -162,6 +162,7 @@
 			
 		});
 
+
 		$('.close').click(function(){
 			$('#myModal').css('display','none');
 		});
@@ -174,6 +175,12 @@
 				}
 			}
 		});
+
+		$('#myModal').click(function(){
+			if($('#myModal').css('display') == 'block') {
+				$('#myModal').css('display','none');
+			}
+		})
 
 		// Contact Form
 		$('#sendMsgBtn').click(function(e){
