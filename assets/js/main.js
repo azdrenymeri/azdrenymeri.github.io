@@ -185,7 +185,8 @@
 		// Contact Form
 		$('#sendMsgBtn').click(function(e){
 			e.preventDefault();
-
+			$(this).html('Sending...');
+			
 			let nameNode = $('#name_field');
 			let emailNode = $('#email_field');
 			let subjectNode = $('#subject_field');
