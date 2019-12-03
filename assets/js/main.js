@@ -191,7 +191,7 @@
 			let subjectNode = $('#subject_field');
 			let messageNode = $('#message_field');
 			let msg = subjectNode.val();
-			msg += '\n';
+			msg += ' - ';
 			msg += messageNode.val();
 
 			 if(nameNode.val().length <= 0 || emailNode.val().length <= 0 || 
@@ -202,7 +202,7 @@
 			const params = {
 				user_name: $('#name_field').val(),
 				user_email: $('#email_field').val(),
-				message: msg
+				message_html: msg
 			};
 			
 			emailjs.send('gmail', 'contact', params, 'user_use8oPrBA0jXLxFJQ0feh')
