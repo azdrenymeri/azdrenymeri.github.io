@@ -182,6 +182,13 @@
 			}
 		})
 
+		if($(document).width() < 736) {
+			$('.close').hide();
+		}
+
+
+
+
 		// Contact Form
 		$('#sendMsgBtn').click(function(e){
 			e.preventDefault();
@@ -229,12 +236,10 @@
 				})
 				
 			});
-
 			
 		});	
 
 		// Reset Form
-
 		$('#resetFromBtn').click(function(e){
 			$('#name_field').val('');
 			$('#email_field').val('');
